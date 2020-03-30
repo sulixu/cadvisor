@@ -61,6 +61,7 @@ var allMetrics = container.MetricSet{
 	container.NetworkTcpUsageMetrics:  struct{}{},
 	container.NetworkUdpUsageMetrics:  struct{}{},
 	container.ProcessMetrics:          struct{}{},
+	container.HugetlbUsageMetrics:     struct{}{},
 }
 
 func (p testSubcontainersInfoProvider) SubcontainersInfo(string, *info.ContainerInfoRequest) ([]*info.ContainerInfo, error) {
